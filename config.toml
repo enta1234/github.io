@@ -1,3 +1,11 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://enta1234.github.io"
+title = "UCODE"
+theme = "tale"
+languageCode = "th-en"
+
+
+defaultContentLanguage = "en"
+
+
+[Author]
+    name = "chantatha.p"
