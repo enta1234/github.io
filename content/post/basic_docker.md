@@ -6,8 +6,9 @@ draft: false
 
   >docker เป็น software container ทำงานได้รวดเร็ว ลดขั้นตอนการติดตั้ง os ลง โดยเปลี่ยนเป็น **image file** ให้เรียกใช้ได้ง่ายขึ้น เมื่อสั่งให้ images ทำงาน จะเปลี่ยนสถานะเป็น **container** และสามารถติดตั้ง application server ก็สามารถทำได้ง่ายเพราะ docker มีลักษณะเป็น **infrastructure-as-code** (image >> container)
 
-## basic command
+  [อ่านเพิ่มเติมได้ที่](https://github.com/enta1234/docker-cp)
 
+## basic command
 
 <table border="1">
   <tr>
@@ -67,6 +68,8 @@ draft: false
   </tr>
 </table>
 
+  [รายละเอียดเพิ่มเติม](https://docs.docker.com/engine/reference/commandline/docker/)
+
 ## cp1 pull images
   >ให้ทำการ pull **image** ลงมาไว้ภายในเครื่อง
 
@@ -77,7 +80,7 @@ draft: false
   >ทำการใช้งาน image ที่ได้ pull ลงมา โดยเปลี่ยนเป็น **container** ด้วยคำสั่ง run
  
   - 1 `>_ docker run --rm -it --name entro01 alpine`
-  - 2 `>_ docker run -dit -p 3000:3000 --name entro01 alpine`
+  - 2 `>_ docker run -d -p 3000:3000 --name entro01 alpine`
   - 3 `>_ docker run --rm -it -w /app/myweb --expose 3000 -p 3000:3000 --mount .\:/app/myweb python:2.7.16-alpine3.8 python main.py`
   
 ## cp3 Dockerfile
@@ -100,7 +103,7 @@ draft: false
 
   ex.
 
-  `>_ docker run -dit -p 8000:8000 --name webEntro myweb:1.0.0`
+  `>_ docker run -d -p 8000:8000 --name webEntro myweb:1.0.0`
 
 ## cp5 stop-start-delete
   ex. stop container
