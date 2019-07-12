@@ -1,5 +1,5 @@
 ---
-title: "การใช้ Git เบื้องต้น #1"
+title: "การใช้ Git เบื้องต้น #1 git init"
 date: 2017-06-12T01:29:05+07:00
 draft: false
 ---
